@@ -513,3 +513,17 @@ footer .footer-below {
 .sidetext{
     width:50%
 }
+.toolstech{
+    margin: auto;
+    width:100%;
+    text-align:center;
+}
+.toolstech.tr{
+    margin: auto;
+    width:100%;
+    text-align:center;
+    margin-bottom: 0;
+}
+.toolstech.tr, td{
+    margin: auto;
+    text-align:center;
