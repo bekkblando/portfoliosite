@@ -145,6 +145,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background: #2C3E50;
 }
 
 .navbar a:focus {
@@ -162,6 +163,16 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-default,
+.navbar-brand{
+    color: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+   color: #fff !important;
+
 }
 
 section {
@@ -450,4 +461,55 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+    background: #E5E5E5;
+    position: relative;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.centercircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circlecaption {
+  position: absolute;
+  font-size: x-large;
+  color: #2C3E50;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.circlecontains{
+   margin-bottom: 15%;
+
+}
+
+.skilltable{
+    margin: auto;
+    width:100%;
+    text-align:center;
+}
+.skilltable.tr{
+    margin: auto;
+    width:100%;
+    text-align:center;
+}
+.skilltable.tr, td{
+    margin: auto;
+    width: 33.3333%;
+    text-align:center;
+    padding:3%;
+}
+.sidetext{
+    width:50%
 }

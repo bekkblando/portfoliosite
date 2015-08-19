@@ -451,3 +451,16 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+    background: black;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.centercircle {
+    display:block;
+    position:absolute;
+}

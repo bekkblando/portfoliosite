@@ -19,47 +19,94 @@
     </header>
 
   <section id="portfolio">
-        <div class="container">
-            <div class="row">
+        <div class="container center-block">
+            <div class="row" style="margin-bottom: 3%;">
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
                     <hr class="star-primary">
                 </div>
             </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 circlecontains">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                            <div class="circle">
+                                <i class="fa fa-user fa-5x centercircle"></i>
                             </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <div class="circlecaption">My Life</div>
                     </a>
                 </div>
-                <div class="col-sm-4">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                <div class="col-sm-4 circlecontains">
+                    <a href="{% url 'resume' %}" class="portfolio-link" data-toggle="modal">
+                            <div class="circle">
+                                <i class="fa fa-paperclip fa-5x centercircle"></i>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <div class="circlecaption">My Resume</div>
+
                     </a>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 circlecontains">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                            <div class="circle">
+                                  <i class="fa fa-laptop fa-5x centercircle"></i>
                             </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                        <div class="circlecaption">My Work</div>
+
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+<!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>
+                        I was born and raised in Greenville, South Carolina.  In Greenville
+                    I was raised in an enviroment that favors rapid growth, both parents are entreprenuers and I was surrounded by developers
+                    my entire life.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p>I have a deep love for knowledge, both in attaining it and in spreading it. This is
+                    apparent in all of my ventures.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-connectdevelop"></i> Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section  id="contact">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                    <h2>Contact</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3>(864)-252-5185</h3>
+                    <h3><a href="mailto:bekblando@gmail.com">bekkblando@gmail.com</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 {% endblock %}
 </html>
