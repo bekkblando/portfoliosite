@@ -472,19 +472,24 @@ footer .footer-below {
     margin-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
 	/* width and height can be anything, as long as they're equal */
 }
-/*.circle:hover {
+.circle:hover {
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
-    background: black;
+    background: #A5A5A5;
     position: relative;
     margin-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
 	// width and height can be anything, as long as they're equal
-}*/
+}
 
 .centercircle {
   position: absolute;
