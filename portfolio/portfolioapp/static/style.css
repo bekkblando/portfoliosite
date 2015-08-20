@@ -198,7 +198,7 @@ section.success a.active {
     color: #2c3e50;
 }
 
-/*@media(max-width:767px) {
+@media(max-width:767px) {
     section {
         padding: 75px 0;
     }
@@ -206,7 +206,7 @@ section.success a.active {
     section.first {
         padding-top: 75px;
     }
-}*/
+}
 
 #portfolio .portfolio-item {
     right: 0;
@@ -259,11 +259,11 @@ section.success a.active {
     z-index: 2;
 }
 
-/*@media(min-width:767px) {
+@media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
-}*/
+}
 
 .btn-outline {
     margin-top: 15px;
