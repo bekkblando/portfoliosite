@@ -1,0 +1,17 @@
+{% if registered %}
+<strong>thank you for registering!</strong>
+<a href="{% url 'login' %}">Click here to login!</a><br />
+{% else %}
+
+<form id="user_form" method="post" action="/register/"
+        enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+
+    {{ user_form.as_p }}
+    <strong>The following information is not required but needed to use certain features of the app</strong>
+    {{ profile_form.as_p }}
+<button type="submit" name="submit" value="Register" >Register</button>
+</form>
+{% endif %}</div>
