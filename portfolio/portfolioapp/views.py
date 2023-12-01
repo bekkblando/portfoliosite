@@ -1,12 +1,10 @@
 from django.shortcuts import render
 from portfolioapp.models import Blog_Post
 from django.views.generic import CreateView, DetailView, ListView
-from rest_framework import generics
-from rest_framework import serializers
-from django.core.urlresolvers import reverse_lazy
+from django.urls import reverse_lazy
 from django.template import RequestContext
 from portfolioapp.forms import UserForm
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import render, redirect
 
 # def blog_template(request):
 #     print("test")
@@ -27,10 +25,9 @@ def register(request):
             pass
     else:
         user_form = UserForm()
-    return render_to_response(
+    return render(request,
         'register.html',
-        {'user_form': user_form, 'registered': registered},
-        context)
+        {'user_form': user_form, 'registered': registered})
 
 
 class PBlog(DetailView):
